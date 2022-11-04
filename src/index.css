@@ -25,12 +25,12 @@ html, body, #root, .app {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #010026;
+  background: #DC4492;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #DC4492;
+  background: #010026;
 }
 
 /* Handle on hover */

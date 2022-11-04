@@ -8,6 +8,9 @@ import { motion } from "framer-motion";
 import Navbar from "./scenes/Navbar";
 import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
+import Testimonials from "./scenes/Testimonials";
+import Contact from "./scenes/Contact";
+import Footer from "./scenes/Footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -54,6 +57,18 @@ function App() {
       <div className="w-5/6 mx-auto">
         <Projects />
       </div>
+
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Testimonials />
+      </div>
+
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Contact />
+      </div>
+
+      <Footer />
     </div>
   );
 }
