@@ -6,6 +6,8 @@ import LineGradient from "./components/LineGradient";
 
 import { motion } from "framer-motion";
 import Navbar from "./scenes/Navbar";
+import MySkills from "./scenes/MySkills";
+import Projects from "./scenes/Projects";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -42,7 +44,16 @@ function App() {
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
+
       <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <MySkills />
+      </div>
+
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Projects />
+      </div>
     </div>
   );
 }
